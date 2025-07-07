@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+    /* Membuat scroll menjadi halus */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5C5F6A;
+    /* Warna scrollbar */
+    border-radius: 4px;
+    /* Membuat ujung scrollbar membulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0E1422;
+    /* Warna saat di-hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #edf2f7;
+    /* Warna track (background scrollbar) */
+}
