@@ -97,13 +97,13 @@ const MainLayout = () => {
   }, [refreshAuth, loading]); // Tambahkan loading sebagai dependency
 
   // Jika loading dari context, tampilkan loading spinner
-  if (loading) {
-    return (
-      <div className="h-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black bg-opacity-50 w-full flex">
-        <HashLoader color="#C0392B" size={50} />
-      </div>
-    );
-  }
+  //if (loading) {
+  //  return (
+  //    <div className="h-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black bg-opacity-50 w-full flex">
+  //      <HashLoader color="#C0392B" size={50} />
+  //    </div>
+  //  );
+  //}
 
   return (
     <div
