@@ -23,7 +23,7 @@ import LoginPage from "./pages/auth/loginPage.jsx";
 import OtpForm from "./pages/OTPForm/OtpForm.jsx";
 import ResendOtp from "./pages/ResendOTP/ResendOtp.jsx";
 // import AuthContext, { AuthProvider } from "./utils/context/AuthContext.jsx"; // Hapus import ini
-import { AuthProvider, useAuth } from './utils/context/AuthContext.jsx'; // Pastikan path ini benar
+import AuthContext, { AuthProvider, useAuth } from './utils/context/AuthContext.jsx'; // Pastikan path ini benar
 
 import { useMediaQuery } from "react-responsive";
 // import { Loader } from "lucide-react";
