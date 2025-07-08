@@ -8,15 +8,15 @@ import {
 } from "react-router-dom";
 import Sidebar from "./pages/navigation/sidebar";
 import { useState, useContext, useEffect } from "react"; // useContext tetap di sini
-import DashboardPage from "./pages/dashboard/Dashboard.jsx";
-import PostPage from "./pages/post/Berita.jsx";
-import UsersPage from "./pages/users/Users.jsx";
-import SettingsPage from "./pages/setting/Settings.jsx";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
+import Post from "./pages/post/Berita.jsx";
+import Users from "./pages/users/Users.jsx";
+import Settings from "./pages/setting/Settings.jsx";
 // import HelpCenter from "./pages/helpcenter/helpCenter.jsx";
-import Add from "./pages/post/addPost.jsx";
-import EditPostPage from "./pages/post/editPost.jsx";
-import LayananPage from "./pages/layanan/Layanan.jsx";
-import SliderPage from "./pages/slider/Slider.jsx";
+import AddPost from "./pages/post/addPost.jsx";
+import EditPost from "./pages/post/editPost.jsx";
+import Layanan from "./pages/layanan/Layanan.jsx";
+import Slider from "./pages/slider/Slider.jsx";
 import { Toaster } from "react-hot-toast";
 import RegisterPage from "./pages/auth/registerPgae.jsx";
 import LoginPage from "./pages/auth/loginPage.jsx";
