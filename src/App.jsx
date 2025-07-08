@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,22 +8,22 @@ import {
 } from "react-router-dom";
 import Sidebar from "./pages/navigation/sidebar";
 import { useState, useContext, useEffect } from "react"; // useContext tetap di sini
-import Dashboard from "./pages/dashboard/Dashboard.jsx";
-import Post from "./pages/post/Berita.jsx";
-import Users from "./pages/users/Users.jsx";
-import Settings from "./pages/setting/Settings.jsx";
+import DashboardPage from "./pages/dashboard/Dashboard.jsx";
+import PostPage from "./pages/post/Berita.jsx";
+import UsersPage from "./pages/users/Users.jsx";
+import SettingsPage from "./pages/setting/Settings.jsx";
 // import HelpCenter from "./pages/helpcenter/helpCenter.jsx";
 import Add from "./pages/post/addPost.jsx";
-import EditPost from "./pages/post/editPost.jsx";
-import Layanan from "./pages/layanan/Layanan.jsx";
-import Slider from "./pages/slider/Slider.jsx";
+import EditPostPage from "./pages/post/editPost.jsx";
+import LayananPage from "./pages/layanan/Layanan.jsx";
+import SliderPage from "./pages/slider/Slider.jsx";
 import { Toaster } from "react-hot-toast";
 import RegisterPage from "./pages/auth/registerPgae.jsx";
 import LoginPage from "./pages/auth/loginPage.jsx";
 import OtpForm from "./pages/OTPForm/OtpForm.jsx";
 import ResendOtp from "./pages/ResendOTP/ResendOtp.jsx";
 // import AuthContext, { AuthProvider } from "./utils/context/AuthContext.jsx"; // Hapus import ini
-import AuthContext, { AuthProvider, useAuth } from './utils/context/AuthContext.jsx';// Tergantung struktur folder Anda, jika App.jsx di root src, maka './context/AuthContext.jsx'
+import { AuthProvider, useAuth } from './utils/context/AuthContext.jsx'; // Pastikan path ini benar
 
 import { useMediaQuery } from "react-responsive";
 // import { Loader } from "lucide-react";
@@ -94,6 +95,15 @@ const MainLayout = () => {
       initializeAuth();
     }
   }, [refreshAuth, loading]); // Tambahkan loading sebagai dependency
+
+  // Jika loading dari context, tampilkan loading spinner
+  if (loading) {
+    return (
+      <div className="h-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black bg-opacity-50 w-full flex">
+        <HashLoader color="#C0392B" size={50} />
+      </div>
+    );
+  }
 
   return (
     <div
