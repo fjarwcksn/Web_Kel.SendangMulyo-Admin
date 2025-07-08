@@ -13,7 +13,7 @@ import Post from "./pages/post/Berita.jsx";
 import Users from "./pages/users/Users.jsx";
 import Settings from "./pages/setting/Settings.jsx";
 // import HelpCenter from "./pages/helpcenter/helpCenter.jsx";
-import AddPost from "./pages/post/addPost.jsx";
+import Add from "./pages/post/addPost.jsx";
 import EditPost from "./pages/post/editPost.jsx";
 import Layanan from "./pages/layanan/Layanan.jsx";
 import Slider from "./pages/slider/Slider.jsx";
